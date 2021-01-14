@@ -33,6 +33,13 @@
 - [Spicetify-cli](https://github.com/khanhas/spicetify-cli/wiki/Installation)
 - [Spicetify Themes](https://github.com/morpheusthewhite/spicetify-themes)
 - [Sennheiser-gsx-1200 driver](https://github.com/evilphish/sennheiser-gsx-1000)
+- Firefox add [userChrome](https://www.userchrome.org/how-create-userchrome-css.html) with:
+
+    ```css
+    #webrtcIndicator {
+        display: none;
+    }
+    ```
 
 ## Old
 
