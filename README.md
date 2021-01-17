@@ -41,6 +41,13 @@
     }
     ```
 
+- Alias sudo as please with:
+
+    ```bash
+    echo please="sudo" >> ~/.bash_aliases
+    source ~/.bashrc
+    ```
+
 ## Old
 
 // Needs fixing: [Komorebi](https://github.com/cheesecakeufo/komorebi/releases)
