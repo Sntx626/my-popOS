@@ -1,5 +1,7 @@
 # my-popOS
 
+![Desktop Screenshot](images/example.png)
+
 ## Distro
 
 [Pop!_OS 20.10](https://pop.system76.com/)
