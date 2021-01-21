@@ -8,15 +8,15 @@
 
 ## Software
 
-- Conky @ sudo apt install conky-all
+- Conky @ `sudo apt install conky-all`
 
 - [Discord](https://discord.com/download)
 
-- Htop @ sudo apt install htop
+- Htop @ `sudo apt install htop`
 
 - KeePassXC @Pop!_Shop (flatpak)
 
-- Neofetch @ sudo apt install neofetch
+- Neofetch @ `sudo apt install neofetch`
 
 - [Parsec](https://parsecgaming.com/downloads/)
 
