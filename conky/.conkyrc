@@ -119,21 +119,21 @@ ${font :size=11}${color1}NETWORK ${color6}${hr 2}${color}
 ${voffset -15}
 ${font Montserrat Light:size=8}${color1}LAN:${color}${font}${alignr}${color4}Intel® I219V${color}${font}
 ${font Montserrat Light:size=8}${color1}CONN:${color}${font}${goto 70}${if_up enp0s31f6}true${else}false${endif} ${goto 150}${font Montserrat Light:size=8}${color1}IP ADDR:${color}${font} ${alignr}${addr enp0s31f6}
-${font Montserrat Light:size=8}${color1}SPEED:${goto 70}UP:${color}${font} ${goto 120}${upspeed enp0s31f6}${goto 180}${font Montserrat Light:size=8}${color1}DOWN:${color}${font}${goto 220}${alignr}${downspeed enp0s31f6}${font}
+${font Montserrat Light:size=8}${color1}SPEED:${goto 70}UP/s:${color}${font} ${goto 120}${upspeed enp0s31f6}${goto 180}${font Montserrat Light:size=8}${color1}DOWN/s:${color}${font}${goto 220}${alignr}${downspeed enp0s31f6}${font}
 ${font Montserrat Light:size=8}${color1}UPLOAD: ${color}${font} ${goto 80}${color4}${upspeedgraph enp0s31f6 15,210 ADFF2F 32CD32 -t}${color}
 ${voffset -14}
 ${font Montserrat Light:size=8}${color1}DOWN:${color}${font} ${goto 80}${color4}${downspeedgraph enp0s31f6 15,210 FF0000 8B0000 -t}${color}
 ${voffset -14}
-${font Montserrat Light:size=8}${color1}TOTAL:${goto 70}UP:${color}${font} ${goto 120}${totalup enp0s31f6}${goto 180}${font Montserrat Light:size=8}${color1}DOWN:${color}${font}${goto 220}${alignr}${totaldown enp0s31f6}${font}
+${font Montserrat Light:size=8}${color1}TOTAL:${goto 70}UP/s:${color}${font} ${goto 120}${totalup enp0s31f6}${goto 180}${font Montserrat Light:size=8}${color1}DOWN/s:${color}${font}${goto 220}${alignr}${totaldown enp0s31f6}${font}
 ${voffset 6}
 ${font Montserrat Light:size=8}${color1}WIFI:${color}${font}${alignr}${color4}Wi-Fi 802.11 a/b/g/n/ac${color}${font}
 ${font Montserrat Light:size=8}${color1}CONN:${color}${font}${goto 70}${if_up wlp4s0}${wireless_link_qual_perc wlp4s0}%${else}false${endif} ${goto 150}${font Montserrat Light:size=8}${color1}IP ADDR:${color}${font} ${alignr}${addr wlp4s0}
-${font Montserrat Light:size=8}${color1}SPEED:${goto 70}UP:${color}${font} ${goto 120}${upspeed wlp4s0}${goto 180}${font Montserrat Light:size=8}${color1}DOWN:${color}${font}${goto 220}${alignr}${downspeed wlp4s0}${font}
+${font Montserrat Light:size=8}${color1}SPEED:${goto 70}UP/s:${color}${font} ${goto 120}${upspeed wlp4s0}${goto 180}${font Montserrat Light:size=8}${color1}DOWN/s:${color}${font}${goto 220}${alignr}${downspeed wlp4s0}${font}
 ${font Montserrat Light:size=8}${color1}UPLOAD: ${color}${font} ${goto 80}${color4}${upspeedgraph wlp4s0 15,210 ADFF2F 32CD32 -t}${color}
 ${voffset -14}
 ${font Montserrat Light:size=8}${color1}DOWN:${color}${font} ${goto 80}${color4}${downspeedgraph wlp4s0 15,210 FF0000 8B0000 -t}${color}
 ${voffset -14}
-${font Montserrat Light:size=8}${color1}TOTAL: ${goto 70}UP:${color}${font} ${goto 120}${totalup wlp4s0}${goto 180}${font Montserrat Light:size=8}${color1}DOWN:${color}${font}${goto 220}${alignr}${totaldown wlp4s0}${font}
+${font Montserrat Light:size=8}${color1}TOTAL: ${goto 70}UP/s:${color}${font} ${goto 120}${totalup wlp4s0}${goto 180}${font Montserrat Light:size=8}${color1}DOWN/s:${color}${font}${goto 220}${alignr}${totaldown wlp4s0}${font}
 ${voffset 6}
 ${font :size=11}${color1}DISKS ${color6}${hr 2}${color}
 ${voffset -15}
