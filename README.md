@@ -4,13 +4,50 @@
 
 ## Distro
 
-[Pop!_OS 20.10](https://pop.system76.com/)
+- [Pop!_OS 20.10](https://pop.system76.com/)
+
+  - Set display timeout
+
+  - Disable Mouse Acceleration
+
+  - Set Terminal Transparency
+
+  - Alias sudo as please with:
+
+    ```bash
+    echo please="sudo" >> ~/.bash_aliases
+    source ~/.bashrc
+    ```
 
 ## Software
 
 - Conky @ `sudo apt install conky-all`
 
+  - Install and setup [sensors](https://wiki.ubuntuusers.de/Lm_sensors/) with:
+
+    - `sudo apt install lm-sensors`
+
+    - `sudo sensors-detect`
+
+  - Copy `conky/draw_bg.lua` to `~/scripts/draw_bg.lua`
+
+  - Copy `conky/.conkyrc` to your home folder
+
+  - Add conky to autostart
+
 - [Discord](https://discord.com/download)
+
+  - Add toggle mute keybind
+
+- Firefox (already installed!)
+
+  - Add [userChrome](https://www.userchrome.org/how-create-userchrome-css.html) containing:
+
+    ```css
+    #webrtcIndicator {
+        display: none;
+    }
+    ```
 
 - Htop @ `sudo apt install htop`
 
@@ -26,7 +63,33 @@
 
 - Tweak Tool @ Pop!_Shop (debian)
 
+  - Top Bar enable `Weekday`, `Date`, `Seconds` & `Week Numbers`
+
+  - Window Titlebars enable `Maximize` & `Minimize`
+
 - Visual Studio Code @ Pop!_Shop (debian)
+
+- "Youp for WhatsApp"
+
+  - Add your WhatsApp Icon to `/home/<user>/Pictures/Icons/static/WhatsApp.svg`
+
+  - Replace `~/.local/share/flatpak/exports/share/applications/com.gigitux.youp.desktop` contents with:
+
+    ```txt
+    [Desktop Entry]
+    Name=Youp for Whatsapp
+    Comment=A wrapper for whatsapp written in Rust
+    Type=Application
+    Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=youp com.gigitux.youp
+    Terminal=false
+    Categories=Utility;GTK;
+    Keywords=Rust;Flatpak;GTK;
+    Icon=/home/<user>/Pictures/Icons/static/WhatsApp.svg
+    StartupNotify=false
+    X-Flatpak=com.gigitux.youp
+    ```
+
+    (Be sure to replace `<user>` with your accountname)
 
 ## Gnome Extensions
 
@@ -34,21 +97,17 @@
 
 - [Hide Top Bar](https://extensions.gnome.org/extension/545/hide-top-bar/)
 
-- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/ )
+- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+
+  - Dock Order (or already through screenshot?)
 
 - [Rounded Corners](https://extensions.gnome.org/extension/1514/rounded-corners/)
+
+- [Tweals in System Menu](https://extensions.gnome.org/extension/1653/tweaks-in-system-menu/)
 
 ## Appearance
 
 - [Background (Star Citizen Aegis Nautlis Concept Art)](https://starcitizen.tools/images/6/68/Nautilus_-_In_formation_attacking_in_battle_-_Port.jpg)
-
-- After installing [Conky](#Software)
-
-  - Copy `conky/draw_bg.lua` to `~/scripts/draw_bg.lua`
-
-  - Copy `conky/.conkyrc` to your home folder
-
-  - Add conky to autostart
 
 - [Shell Theme: mcOS11 Theme](https://www.gnome-look.org/p/1220826/)
 
@@ -59,21 +118,6 @@
 ## Other
 
 - [Sennheiser-gsx-1200 driver](https://github.com/evilphish/sennheiser-gsx-1000)
-
-- Firefox add [userChrome](https://www.userchrome.org/how-create-userchrome-css.html) with:
-
-    ```css
-    #webrtcIndicator {
-        display: none;
-    }
-    ```
-
-- Alias sudo as please with:
-
-    ```bash
-    echo please="sudo" >> ~/.bash_aliases
-    source ~/.bashrc
-    ```
 
 ## Old (DO NOT INSTALL)
 
