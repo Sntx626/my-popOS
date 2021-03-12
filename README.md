@@ -107,6 +107,8 @@
 
 - [Alt-Tab]( https://extensions.gnome.org/extension/15/alternatetab/)
 
+- [Window Is Ready](https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/)
+
 ## Appearance
 
 - [Background (Star Citizen Aegis Nautlis Concept Art)](https://starcitizen.tools/images/6/68/Nautilus_-_In_formation_attacking_in_battle_-_Port.jpg)
